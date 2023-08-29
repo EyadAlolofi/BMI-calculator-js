@@ -6,7 +6,7 @@ function calculateBMI() {
   let weight = parseFloat(document.getElementById("weight").value);
   let height = parseFloat(document.getElementById("height").value);
 
-  let bim = (weight / height) * 2;
+  let bim = (weight / height) ** 2;
   let interpret = interpretBMI(bim);
   document.getElementById("result").innerText = "Your BIM is: " + bim.toFixed(2) + " - " + interpret
 }
